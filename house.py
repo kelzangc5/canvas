@@ -30,4 +30,21 @@ canvas.create_rectangle(290, 180, 330, 220, fill="lightblue")
 # Ground
 canvas.create_rectangle(0, 300, 500, 350, fill="green")
 
+# Sun
+canvas.create_oval(380, 30, 450, 100, fill="yellow", outline="orange")
+
+# Doghouse body
+canvas.create_rectangle(40, 220, 130, 300, fill="orange")
+
+# Doghouse roof - triangle
+canvas.create_polygon(
+    30, 220,
+    85, 170,
+    140, 220,
+    fill="red"
+)
+
+# Doghouse entrance
+canvas.create_oval(65, 245, 105, 300, fill="black")
+
 root.mainloop()
